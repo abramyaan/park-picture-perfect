@@ -2,29 +2,31 @@ import teamImg from "@/assets/team.jpg";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 px-4">
+    <section id="about" className="py-24 px-4 bg-background">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        <div>
-          <p className="text-secondary font-semibold uppercase tracking-widest text-sm mb-3">О нас</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Кто мы</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-            <strong className="text-foreground">«В Кадре»</strong> — это команда профессионалов, специализирующаяся на предоставлении качественных фотоуслуг в торговых центрах и общественных пространствах.
+        <div className="animate-fade-in">
+          <p className="text-secondary font-semibold uppercase tracking-widest text-sm mb-3">О компании</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">Профессиональные фотоуслуги для парков</h2>
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+            <strong className="text-foreground font-semibold">«В Кадре»</strong> — это команда экспертов, превращающая обычную прогулку в незабываемое событие. Мы специализируемся на моментальной фотопродукции и художественном аквагриме.
           </p>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-            Мы создаём стильные фотозоны, которые привлекают посетителей и дарят им незабываемые эмоции. Дополнительным направлением нашей деятельности является профессиональный аквагрим для детей и взрослых.
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Наша миссия — превращать каждый визит в ТЦ в яркое событие, о котором хочется рассказать друзьям.
+          <div className="space-y-4 mb-8">
+            <p className="text-lg text-muted-foreground leading-relaxed italic border-l-4 border-secondary pl-6 py-2 bg-secondary/5 rounded-r-lg">
+              «Мы не просто арендаторы, а часть общей системы сервиса парка. Наша задача — создать эмоцию, которая формирует лояльность гостя».
+            </p>
+          </div>
+          <p className="text-muted-foreground leading-relaxed">
+            В нашем арсенале: уникальные фото-шары, магниты, подарочная продукция и сертифицированные материалы для аквагрима.
           </p>
         </div>
-        <div className="relative">
+        <div className="relative group">
           <img
             src={teamImg}
             alt="Команда В Кадре"
-            className="rounded-2xl shadow-2xl w-full object-cover aspect-square"
+            className="rounded-3xl shadow-2xl w-full object-cover aspect-[4/5] md:aspect-square transition-transform duration-500 group-hover:scale-[1.02]"
           />
-          <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-secondary/20 rounded-2xl -z-10" />
-          <div className="absolute -top-4 -right-4 w-32 h-32 bg-primary/10 rounded-2xl -z-10" />
+          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-secondary/10 rounded-full blur-3xl -z-10" />
+          <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl -z-10" />
         </div>
       </div>
     </section>

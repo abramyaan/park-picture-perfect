@@ -1,4 +1,5 @@
 import heroBg from "@/assets/hero-bg.jpg";
+import vkadre from "@/assets/vkadre.png"; 
 import { Camera, Palette } from "lucide-react";
 
 const HeroSection = () => {
@@ -6,29 +7,39 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <img
         src={heroBg}
-        alt="Фотозона в торговом центре"
+        alt="Фотозона в парке"
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="absolute inset-0 hero-overlay" />
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-up">
-        <div className="flex items-center justify-center gap-3 mb-6">
+      <div className="absolute inset-0 bg-black/45 hero-overlay" />
+      
+      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto animate-fade-up">
+        <div className="flex items-center justify-center gap-4 mb-8 opacity-90">
           <Camera className="w-8 h-8 text-secondary" />
+          <div className="w-px h-8 bg-secondary/50" />
           <Palette className="w-7 h-7 text-secondary" />
         </div>
-        <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-          В Кадре
-        </h1>
-        <p className="text-2xl md:text-3xl font-display text-primary-foreground/90 mb-4 italic">
+        
+        <div className="mb-10 flex justify-center">
+          <img 
+            src={vkadre} 
+            alt="В Кадре" 
+            className="h-48 md:h-80 w-auto object-contain drop-shadow-[0_10px_35px_rgba(0,0,0,0.6)]" 
+          />
+        </div>
+
+        <p className="text-2xl md:text-4xl font-display text-primary-foreground mb-6 italic tracking-wide uppercase">
           Эмоции навсегда
         </p>
-        <p className="text-lg md:text-xl text-primary-foreground/80 font-light max-w-2xl mx-auto mb-10">
-          Фотозоны и аквагрим в торговых центрах — создаём яркие впечатления для ваших посетителей
+        
+        <p className="text-lg md:text-2xl text-primary-foreground/90 font-light max-w-3xl mx-auto mb-12 leading-relaxed">
+          Профессиональные фотозоны и аквагрим для вашего парка. Создаём яркие впечатления, которые заставляют гостей возвращаться снова.
         </p>
+        
         <a
-          href="#conditions"
-          className="inline-block bg-secondary text-secondary-foreground px-8 py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition-opacity"
+          href="#contact"
+          className="inline-block bg-secondary text-secondary-foreground px-10 py-5 rounded-xl text-xl font-bold hover:scale-105 transition-all shadow-2xl hover:shadow-secondary/20"
         >
-          Условия сотрудничества
+          Обсудить сотрудничество
         </a>
       </div>
     </section>

@@ -1,63 +1,61 @@
-import { TrendingUp, Heart, Shield, Clock } from "lucide-react";
+import { TrendingUp, Heart, Shield, Cpu } from "lucide-react";
 import photozoneImg from "@/assets/photozone.jpg";
 
 const advantages = [
   {
     icon: TrendingUp,
-    title: "Увеличение трафика",
-    description: "Наши фотозоны привлекают до 40% больше посетителей в зону размещения",
+    title: "Опыт и понимание",
+    description: "Знаем специфику работы в парках: от требований к безопасности до визуального оформления в стиле локации.",
   },
   {
-    icon: Heart,
-    title: "Положительные эмоции",
-    description: "Создаём атмосферу праздника, повышая лояльность гостей ТЦ",
+    icon: Cpu,
+    title: "IT-технологии",
+    description: "Развиваемся в IT-направлении, используя современные алгоритмы и профильные приложения для обработки фото.",
   },
   {
     icon: Shield,
-    title: "Полная ответственность",
-    description: "Берём на себя все вопросы по организации, оборудованию и персоналу",
+    title: "Долгосрочный результат",
+    description: "Работаем на репутацию. Берем на себя весь цикл: от монтажа до обучения персонала стандартам сервиса.",
   },
   {
-    icon: Clock,
-    title: "Гибкий график",
-    description: "Работаем в удобное для ТЦ время, включая выходные и праздники",
+    icon: Heart,
+    title: "Синергия с парком",
+    description: "Наш персонал организует потоки гостей в пиковые часы, повышая общий комфорт и вовлеченность посетителей.",
   },
 ];
 
 const WhyUsSection = () => {
   return (
-    <section className="py-24 px-4 section-gradient">
+    <section id="why-us" className="py-24 px-4 bg-muted/30">
       <div className="max-w-6xl mx-auto">
-        <p className="text-secondary font-semibold uppercase tracking-widest text-sm mb-3 text-center">
-          Почему мы
-        </p>
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
-          Почему ТЦ нас выбирают
-        </h2>
-        <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-16">
-          Мы предлагаем готовое решение, которое повышает привлекательность вашего пространства без дополнительных затрат и усилий с вашей стороны.
-        </p>
+        <div className="text-center mb-16">
+          <p className="text-secondary font-semibold uppercase tracking-widest text-sm mb-3">Преимущества</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">Почему выбирают нас</h2>
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {advantages.map((adv) => (
               <div
                 key={adv.title}
-                className="bg-background rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
+                className="bg-background rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-border/50"
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <adv.icon className="w-6 h-6 text-primary" />
+                <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+                  <adv.icon className="w-7 h-7 text-secondary" />
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-2">{adv.title}</h3>
-                <p className="text-sm text-muted-foreground">{adv.description}</p>
+                <h3 className="text-xl font-bold text-foreground mb-3">{adv.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{adv.description}</p>
               </div>
             ))}
           </div>
-          <img
-            src={photozoneImg}
-            alt="Фотозона в ТЦ"
-            className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/5]"
-          />
+          <div className="relative">
+            <img
+              src={photozoneImg}
+              alt="Работа фотозоны в парке"
+              className="rounded-3xl shadow-2xl w-full object-cover aspect-[4/5]"
+            />
+            <div className="absolute inset-0 rounded-3xl ring-1 ring-inset ring-black/10" />
+          </div>
         </div>
       </div>
     </section>
