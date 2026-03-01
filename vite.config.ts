@@ -3,10 +3,10 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
+// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Укажи здесь имя своего репозитория в кавычках, например: base: "/my-park-project/",
-  // Если будешь привязывать свой домен (vkadre.ru), оставь просто "/"
-  base: "/", 
+  // Указываем путь к репозиторию для корректной работы GitHub Pages
+  base: "/park-picture-perfect/", 
   
   server: {
     host: "::",
