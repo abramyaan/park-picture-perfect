@@ -10,7 +10,7 @@ const advantages = [
   {
     icon: Heart,
     title: "Положительные эмоции",
-    description: "Создаём атмосферу праздника, повышая лояльность гостей парка",
+    description: "Создаём атмосферу праздника, повышая лояльность гостей ТЦ",
   },
   {
     icon: Shield,
@@ -20,7 +20,7 @@ const advantages = [
   {
     icon: Clock,
     title: "Гибкий график",
-    description: "Работаем в удобное для парка время, включая выходные и праздники",
+    description: "Работаем в удобное для ТЦ время, включая выходные и праздники",
   },
 ];
 
@@ -32,7 +32,7 @@ const WhyUsSection = () => {
           Почему мы
         </p>
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
-          Почему парки нас выбирают
+          Почему ТЦ нас выбирают
         </h2>
         <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-16">
           Мы предлагаем готовое решение, которое повышает привлекательность вашего пространства без дополнительных затрат и усилий с вашей стороны.
@@ -55,7 +55,7 @@ const WhyUsSection = () => {
           </div>
           <img
             src={photozoneImg}
-            alt="Фотозона в парке"
+            alt="Фотозона в ТЦ"
             className="rounded-2xl shadow-2xl w-full object-cover aspect-[4/5]"
           />
         </div>

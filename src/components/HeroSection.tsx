@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <img
         src={heroBg}
-        alt="Фотозона в парке"
+        alt="Фотозона в торговом центре"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 hero-overlay" />
@@ -22,7 +22,7 @@ const HeroSection = () => {
           Эмоции навсегда
         </p>
         <p className="text-lg md:text-xl text-primary-foreground/80 font-light max-w-2xl mx-auto mb-10">
-          Фотозоны и аквагрим в парках — создаём яркие впечатления для ваших посетителей
+          Фотозоны и аквагрим в торговых центрах — создаём яркие впечатления для ваших посетителей
         </p>
         <a
           href="#conditions"
