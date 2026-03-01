@@ -13,10 +13,11 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* Добавляем basename для корректной работы на GitHub Pages */}
+      <BrowserRouter basename="/park-picture-perfect">
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          {/* Все кастомные роуты добавляй выше NotFound */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
