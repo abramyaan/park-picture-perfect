@@ -1,73 +1,48 @@
-# Welcome to your Lovable project
+# 📸 РеалФото — Сервис профессиональных фотозон
 
-## Project info
+Лендинг для компании "РеалФото" (г. Оренбург). Проект представляет собой современный одностраничный сайт с адаптивным дизайном, созданный для презентации услуг по организации фотозон и профессиональной съемки.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+![Превью сайта](https://realfoto.site/assets/realfotohero.jpg)
 
-## How can I edit this code?
+## 🚀 Технологии
 
-There are several ways of editing your application.
+Проект построен на современном стеке:
+* **React 18** + **TypeScript**
+* **Vite** (сверхбыстрая сборка)
+* **Tailwind CSS** (стилизация)
+* **Shadcn UI** (компоненты интерфейса)
+* **Framer Motion** (анимации)
+* **React Router 6** (навигация)
 
-**Use Lovable**
+## 🛠 Установка и запуск
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+1. Клонируйте репозиторий:
+   ```bash
+   git clone [https://github.com/твой-аккаунт/park-picture-perfect.git](https://github.com/твой-аккаунт/park-picture-perfect.git)
+   Установите зависимости:
 
-Changes made via Lovable will be committed automatically to this repo.
+Bash
+npm install
+Запустите проект в режиме разработки:
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Bash
 npm run dev
-```
+Сборка для продакшена:
 
-**Edit a file directly in GitHub**
+Bash
+npm run build
+🌐 Деплой
+Сайт автоматически деплоится на GitHub Pages по адресу: https://realfoto.site
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Для ручного деплоя используется команда:
 
-**Use GitHub Codespaces**
+Bash
+npm run deploy
+📈 Аналитика и SEO
+Подключена Яндекс.Метрика (ID: 107585929) с настроенным Вебвизором.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Настроены Open Graph мета-теги для корректного отображения превью в Telegram/WhatsApp.
 
-## What technologies are used for this project?
+Сайт подтвержден в Яндекс.Вебмастере.
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Разработано специально для РеалФото Оренбург.
